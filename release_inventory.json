@@ -1,0 +1,293 @@
+{
+  "schema_version": 1,
+  "files": [
+    {
+      "path": "config/cognitive_complementarity_replication.yaml",
+      "exists": true,
+      "bytes": 2492,
+      "sha256": "a2e06cca9f7231cbeeae9605ac6df23ae50a459d2c804f5d2a38f7d517f56f4c"
+    },
+    {
+      "path": "config/harmonized_dk68_replication.yaml",
+      "exists": true,
+      "bytes": 2802,
+      "sha256": "5f8c89645d3df879db7c19f0b18f266dea3b4bee29398345aee370fbaf449e3b"
+    },
+    {
+      "path": "config/information_specific_mwc.yaml",
+      "exists": true,
+      "bytes": 998,
+      "sha256": "4190b31e8666336a7af43740bf7c236302dd4f29c9f7b448a63fc500494735a5"
+    },
+    {
+      "path": "config/mitochondrial_validation.yaml",
+      "exists": true,
+      "bytes": 2014,
+      "sha256": "332b43d29291bb6bad538cff7d46b6caf776b48569d75c8a2f702bfc6224c480"
+    },
+    {
+      "path": "config/paper1_reliability.yaml",
+      "exists": true,
+      "bytes": 1371,
+      "sha256": "2b6a49088e7c752dff7e75dcc5bc396438ae3a1950cd15e76deb8e5ddd5968c6"
+    },
+    {
+      "path": "config/qnld_consequence.yaml",
+      "exists": true,
+      "bytes": 3070,
+      "sha256": "b763c1ad5a312f359566c99291489b11b7575f5be7561104ccabf7c049019c89"
+    },
+    {
+      "path": "manuscript/paper1/latex/figures/figure2_2x2_alternative.pdf",
+      "exists": true,
+      "bytes": 108236,
+      "sha256": "1c482acb7cf45c2b32bc9c520d36d264c86a67b1a4f42504bd388e52baafc561"
+    },
+    {
+      "path": "manuscript/paper1/latex/figures/figure3_reliability_enriched.pdf",
+      "exists": true,
+      "bytes": 268586,
+      "sha256": "d67fbd549019ef0f724563128ad5d11173cae4e54b4c5de30957a1a744ba745b"
+    },
+    {
+      "path": "manuscript/paper1/latex/figures/figure4_cognitive_complementarity_age_stratified_annotated_v4.pdf",
+      "exists": true,
+      "bytes": 123920,
+      "sha256": "0b8bb18ab1daf468d48ac0e5745b9d93eac618c7a6171f8c5c89d86f2508a0e8"
+    },
+    {
+      "path": "manuscript/paper1/latex/figures/figure5_cross_cohort_cognitive_decoding.pdf",
+      "exists": true,
+      "bytes": 104294,
+      "sha256": "8840ff0e1683f38604ac03a4d4347cb090f7b07b3d59383e9d274eadd79ae9a9"
+    },
+    {
+      "path": "manuscript/paper1/latex/figures/figure6_external_biology_enriched.pdf",
+      "exists": true,
+      "bytes": 103380,
+      "sha256": "82d7bed8ee1d608a50f30ebf9f84e39bead6ce44aa2ebbaf5d72ffd8f800bcf5"
+    },
+    {
+      "path": "manuscript/paper1/latex/figures/framework1.pdf",
+      "exists": true,
+      "bytes": 1293837,
+      "sha256": "fe18904f53761883e29a5e91104f71e5b277b7ded01ffa6dcabe2929a73d4d29"
+    },
+    {
+      "path": "manuscript/paper1/scripts/audit_core_metric_specificity.py",
+      "exists": true,
+      "bytes": 11512,
+      "sha256": "9772691dd1fe746a10e7983810332df15b8feb54b675430dbf48773c58a61225"
+    },
+    {
+      "path": "manuscript/paper1/scripts/make_figure2_2x2_alternative.py",
+      "exists": true,
+      "bytes": 17332,
+      "sha256": "5e2b53947eb42a77a1beea2816abd63d34edc039cb1ff301312459adc6c15d5c"
+    },
+    {
+      "path": "manuscript/paper1/scripts/make_figure3_reliability_enriched.py",
+      "exists": true,
+      "bytes": 14418,
+      "sha256": "4c33c75fa2a123cb4ea77a385803a3fcbab216ef5ec8cf3da0e8711152a68bbd"
+    },
+    {
+      "path": "manuscript/paper1/scripts/make_figure4_cognitive_complementarity_enriched.py",
+      "exists": true,
+      "bytes": 30324,
+      "sha256": "a666269ab7c7d73c3e737cea971bd6ea6060eb00ccc7e959cc30e2bad7b693ba"
+    },
+    {
+      "path": "manuscript/paper1/scripts/make_figure5_cross_cohort_cognitive_decoding.py",
+      "exists": true,
+      "bytes": 13574,
+      "sha256": "c0049122c080a9540850708fea19e00806700f1449650e5870ceef15725cd7f4"
+    },
+    {
+      "path": "manuscript/paper1/scripts/make_figure6_external_biology_enriched.py",
+      "exists": true,
+      "bytes": 11332,
+      "sha256": "b7a9172a75e8d183ead059349ab029ff0622b9902fc27c488cd13384e40bd33f"
+    },
+    {
+      "path": "results/information_specific_mwc/cognitive_complementarity_replication/group_edge_cognitive_similarity.csv",
+      "exists": true,
+      "bytes": 27940,
+      "sha256": "1a22603a778e82056a4da7038078fc23b7fd92fdbb462549cea1d2e5d397a416"
+    },
+    {
+      "path": "results/information_specific_mwc/cognitive_complementarity_replication/run_manifest.json",
+      "exists": true,
+      "bytes": 1002,
+      "sha256": "de1edfdbf3c46df5001e1848ef475e393f0da58882b5b89e34b848274806e7e4"
+    },
+    {
+      "path": "results/information_specific_mwc/cross_cohort_neurosynth_decoding/analysis_manifest.json",
+      "exists": true,
+      "bytes": 1051,
+      "sha256": "c92111dd3bfdf6a5884d505301605abc769160efc252ddd1664732a7cc103a1f"
+    },
+    {
+      "path": "results/information_specific_mwc/cross_cohort_neurosynth_decoding/subject_term_statistics.csv",
+      "exists": true,
+      "bytes": 23627,
+      "sha256": "2216ff3b5373f732c5622ad75d803ab1b57853bdef182605658aaf4b023b692f"
+    },
+    {
+      "path": "results/information_specific_mwc/harmonized_dk68_replication/run_manifest.json",
+      "exists": true,
+      "bytes": 1158,
+      "sha256": "6cd6614de3fab80aaf74b7812fe65e6a69083f95ddbdb783d43be16ead3a61fc"
+    },
+    {
+      "path": "results/information_specific_mwc/harmonized_dk68_replication/subject_endpoints.csv",
+      "exists": true,
+      "bytes": 79288,
+      "sha256": "a33e030e72e7cee53f4ea352bf334b80752d901342023bf50abc0809c27b2612"
+    },
+    {
+      "path": "results/information_specific_mwc/metabolic_information_preference/mip_variant_statistics.csv",
+      "exists": true,
+      "bytes": 1094,
+      "sha256": "851d2a386d10202d51708f60dcbdcb115ad6f05fc252cca3f83a75efbc131fd7"
+    },
+    {
+      "path": "results/information_specific_mwc/mitochondrial_validation/run_manifest.json",
+      "exists": true,
+      "bytes": 2124,
+      "sha256": "6eddb840a551430c67fd0b3a407de32a413d4d5e93429f1ea31a4ea9d5005c96"
+    },
+    {
+      "path": "results/information_specific_mwc/paper1_reliability/analysis_manifest.json",
+      "exists": true,
+      "bytes": 757,
+      "sha256": "43fd4a0aaca7fc7ba5cfe6e60f73a7b7468ab6da1d724a7c89187b81c51717a7"
+    },
+    {
+      "path": "results/information_specific_mwc/paper1_reliability/subject_split_half_reliability.csv",
+      "exists": true,
+      "bytes": 78090,
+      "sha256": "0ce3f3327888ed675c178b8acdaf32bbe9ba8f95029a14c730e7bdb8a5adb726"
+    },
+    {
+      "path": "results/information_specific_mwc/pnas_core_specificity_audit/audit_manifest.json",
+      "exists": true,
+      "bytes": 49419,
+      "sha256": "a96fe573b9f2e8f3541ade9abcc26e00c37e032f5ef0791d27102c50f2ac1489"
+    },
+    {
+      "path": "results/information_specific_mwc/pnas_core_specificity_audit/subject_core_specificity.csv",
+      "exists": true,
+      "bytes": 66879,
+      "sha256": "b4417ab85299bf9556cc600799004cf2f4d2e489f067b3476e7189cd355c7226"
+    },
+    {
+      "path": "results/information_specific_mwc/qnld_consequence/analysis/run_manifest.json",
+      "exists": true,
+      "bytes": 452,
+      "sha256": "2cce563315da75eb7e525ea20e195df23b638246b6cea6bb5e4c4d7c6c62830f"
+    },
+    {
+      "path": "results/information_specific_mwc/qnld_consequence/analysis/subject_endpoints.csv",
+      "exists": true,
+      "bytes": 342295,
+      "sha256": "9e7c2d74e604c55f8c6e8258ccb3f3052244e725c476b15ef670ae0e52ab3546"
+    },
+    {
+      "path": "results/information_specific_mwc/run_manifest.json",
+      "exists": true,
+      "bytes": 2106,
+      "sha256": "07639afabbdfb0f54f9f8a56ee7f544b7f1626b19552a7822c5874bc2eaea2e7"
+    },
+    {
+      "path": "scripts/analyze_cross_cohort_neurosynth_decoding.py",
+      "exists": true,
+      "bytes": 18230,
+      "sha256": "26e3c715e11576dcc7ff6950f940f214dadebb4889677a1ff6590456fbbae3f5"
+    },
+    {
+      "path": "scripts/analyze_metabolic_information_preference.py",
+      "exists": true,
+      "bytes": 31974,
+      "sha256": "9149d8378a04f5d8baf7877b7236f58176fe55de60e5595b0a0df4aa12e6c3e5"
+    },
+    {
+      "path": "scripts/analyze_mitochondrial_validation.py",
+      "exists": true,
+      "bytes": 22008,
+      "sha256": "346362040b7076c438578db1f6cd1f1f453e3ba7339385ab61e6d3c7eeb524a0"
+    },
+    {
+      "path": "scripts/analyze_paper1_reliability.py",
+      "exists": true,
+      "bytes": 14493,
+      "sha256": "ed3ec65d48c2d8120d1c761a2c6cd1a41ee72295df57648befe35e2c032f595d"
+    },
+    {
+      "path": "scripts/run_cognitive_complementarity_replication.py",
+      "exists": true,
+      "bytes": 34502,
+      "sha256": "42e391bff7812694c162c5bdc61b7252a52c5a66ea7164cd5470a23cc6743047"
+    },
+    {
+      "path": "scripts/run_harmonized_dk68_replication.py",
+      "exists": true,
+      "bytes": 24196,
+      "sha256": "55074db314d5bfa18a586a439e14b30af76f7c514ccec988db0e5ed7f3ee13b0"
+    },
+    {
+      "path": "scripts/run_information_specific_mwc.py",
+      "exists": true,
+      "bytes": 14816,
+      "sha256": "f76833d46745bc573e70406f12f012a8e35479ab59fe34cd236fea67b43e8d88"
+    },
+    {
+      "path": "scripts/run_qnld_replication_and_consequence.py",
+      "exists": true,
+      "bytes": 20312,
+      "sha256": "00d0338dc175210acbc88f3db0cd00b42363183d3c847398aa749b2ac5e183ef"
+    },
+    {
+      "path": "src/metabolic_information_mwc/centrality.py",
+      "exists": true,
+      "bytes": 2975,
+      "sha256": "8c66c97b52bde83213d099a4ec3df29f7e2de92fea3cf6317f02a005261f8e4b"
+    },
+    {
+      "path": "src/metabolic_information_mwc/cognitive_complementarity_replication.py",
+      "exists": true,
+      "bytes": 15594,
+      "sha256": "6e86673afa3c74788a2c897bc52dfd6b619ef412c87d55b94d16eeb200e8671b"
+    },
+    {
+      "path": "src/metabolic_information_mwc/harmonized.py",
+      "exists": true,
+      "bytes": 20053,
+      "sha256": "fa11775cd5010408e257e0e36ba79e379f6b34a29d9c9061265868656e8be74a"
+    },
+    {
+      "path": "src/metabolic_information_mwc/mip.py",
+      "exists": true,
+      "bytes": 6959,
+      "sha256": "7e950b566d7e4190b8a3197a1bfd3b49251d9669995a0f8ba67b9c73493b2599"
+    },
+    {
+      "path": "src/metabolic_information_mwc/mitochondrial.py",
+      "exists": true,
+      "bytes": 4404,
+      "sha256": "95fb5fbd3e1c0e8c9826173c32132e00dad7b3778473a88951dcb886b79d198c"
+    },
+    {
+      "path": "src/metabolic_information_mwc/neurosynth.py",
+      "exists": true,
+      "bytes": 11001,
+      "sha256": "f2df92aee41063fa506b619d18302ef0c59c287ae7569070ca0cf4f567ebf807"
+    },
+    {
+      "path": "src/metabolic_information_mwc/phiid.py",
+      "exists": true,
+      "bytes": 11617,
+      "sha256": "5e989c254aa7e174d991a035093ff296407f2d79ce997aeead86189523540658"
+    }
+  ]
+}

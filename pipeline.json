@@ -1,0 +1,94 @@
+{
+  "schema_version": 1,
+  "paper": "Information-resolved metabolism-weighted connectome",
+  "notes": [
+    "Paths are relative to the project root.",
+    "Frozen result files are never removed by this pipeline.",
+    "Figure 1 is a manually assembled editable artwork and is intentionally not regenerated."
+  ],
+  "stages": {
+    "auf_high_resolution": {
+      "description": "Compute the AUF MMP360 information-specific metabolism-weighted metrics.",
+      "command": ["{python}", "scripts/run_information_specific_mwc.py", "--config", "config/information_specific_mwc.yaml"],
+      "debug_command": ["{python}", "scripts/run_information_specific_mwc.py", "--config", "config/information_specific_mwc.yaml", "--debug"],
+      "sources": ["scripts/run_information_specific_mwc.py", "config/information_specific_mwc.yaml", "src/metabolic_information_mwc/phiid.py", "src/metabolic_information_mwc/centrality.py"],
+      "outputs": ["results/information_specific_mwc/run_manifest.json"]
+    },
+    "harmonized_auf_monash": {
+      "description": "Run the matched-length DK68 AUF and Monash replication.",
+      "command": ["{python}", "scripts/run_harmonized_dk68_replication.py", "--config", "config/harmonized_dk68_replication.yaml"],
+      "debug_command": ["{python}", "scripts/run_harmonized_dk68_replication.py", "--config", "config/harmonized_dk68_replication.yaml", "--debug", "--skip-full-length"],
+      "sources": ["scripts/run_harmonized_dk68_replication.py", "config/harmonized_dk68_replication.yaml", "src/metabolic_information_mwc/harmonized.py"],
+      "outputs": ["results/information_specific_mwc/harmonized_dk68_replication/subject_endpoints.csv", "results/information_specific_mwc/harmonized_dk68_replication/run_manifest.json"]
+    },
+    "qnld_replication": {
+      "description": "Run the matched-transition QNLD replication used by Paper 1.",
+      "command": ["{python}", "scripts/run_qnld_replication_and_consequence.py", "--config", "config/qnld_consequence.yaml", "--skip-full-length"],
+      "debug_command": ["{python}", "scripts/run_qnld_replication_and_consequence.py", "--config", "config/qnld_consequence.yaml", "--limit-subjects", "1", "--skip-full-length"],
+      "sources": ["scripts/run_qnld_replication_and_consequence.py", "config/qnld_consequence.yaml"],
+      "outputs": ["results/information_specific_mwc/qnld_consequence/analysis/subject_endpoints.csv", "results/information_specific_mwc/qnld_consequence/analysis/run_manifest.json"]
+    },
+    "metric_specificity": {
+      "description": "Audit whether information-specific node metrics contain structure beyond conventional MwC.",
+      "command": ["{python}", "manuscript/paper1/scripts/audit_core_metric_specificity.py"],
+      "sources": ["manuscript/paper1/scripts/audit_core_metric_specificity.py"],
+      "outputs": ["results/information_specific_mwc/pnas_core_specificity_audit/subject_core_specificity.csv", "results/information_specific_mwc/pnas_core_specificity_audit/audit_manifest.json"]
+    },
+    "split_half_reliability": {
+      "description": "Estimate within-participant, group-map, edge and endpoint split-half reliability.",
+      "command": ["{python}", "scripts/analyze_paper1_reliability.py", "--config", "config/paper1_reliability.yaml"],
+      "debug_command": ["{python}", "scripts/analyze_paper1_reliability.py", "--config", "config/paper1_reliability.yaml", "--limit-subjects", "1"],
+      "sources": ["scripts/analyze_paper1_reliability.py", "config/paper1_reliability.yaml"],
+      "outputs": ["results/information_specific_mwc/paper1_reliability/subject_split_half_reliability.csv", "results/information_specific_mwc/paper1_reliability/analysis_manifest.json"]
+    },
+    "metabolic_information_preference": {
+      "description": "Run the AUF edge-level metabolic-information preference analysis.",
+      "command": ["{python}", "scripts/analyze_metabolic_information_preference.py"],
+      "sources": ["scripts/analyze_metabolic_information_preference.py", "src/metabolic_information_mwc/mip.py"],
+      "outputs": ["results/information_specific_mwc/metabolic_information_preference/mip_variant_statistics.csv"]
+    },
+    "cognitive_complementarity": {
+      "description": "Replicate edge cognitive complementarity and node cognitive-neighbourhood diversity across cohorts.",
+      "command": ["{python}", "scripts/run_cognitive_complementarity_replication.py", "--config", "config/cognitive_complementarity_replication.yaml"],
+      "debug_command": ["{python}", "scripts/run_cognitive_complementarity_replication.py", "--config", "config/cognitive_complementarity_replication.yaml", "--limit-qnld", "1", "--n-spins", "100"],
+      "sources": ["scripts/run_cognitive_complementarity_replication.py", "config/cognitive_complementarity_replication.yaml", "src/metabolic_information_mwc/cognitive_complementarity_replication.py"],
+      "outputs": ["results/information_specific_mwc/cognitive_complementarity_replication/group_edge_cognitive_similarity.csv", "results/information_specific_mwc/cognitive_complementarity_replication/run_manifest.json"]
+    },
+    "cognitive_decoding": {
+      "description": "Run the cross-cohort Neurosynth decoding analyses used in Figure 5.",
+      "command": ["{python}", "scripts/analyze_cross_cohort_neurosynth_decoding.py"],
+      "sources": ["scripts/analyze_cross_cohort_neurosynth_decoding.py", "src/metabolic_information_mwc/neurosynth.py"],
+      "outputs": ["results/information_specific_mwc/cross_cohort_neurosynth_decoding/subject_term_statistics.csv", "results/information_specific_mwc/cross_cohort_neurosynth_decoding/analysis_manifest.json"]
+    },
+    "external_biology": {
+      "description": "Run the secondary CMRO2 and mitochondrial atlas annotations.",
+      "command": ["{python}", "scripts/analyze_mitochondrial_validation.py", "--config", "config/mitochondrial_validation.yaml"],
+      "sources": ["scripts/analyze_mitochondrial_validation.py", "config/mitochondrial_validation.yaml", "src/metabolic_information_mwc/mitochondrial.py"],
+      "outputs": ["results/information_specific_mwc/mitochondrial_validation/run_manifest.json"]
+    },
+    "final_figures": {
+      "description": "Regenerate Figures 2-6 from frozen result tables. Figure 1 is not modified.",
+      "command": [
+        ["{python}", "manuscript/paper1/scripts/make_figure2_2x2_alternative.py"],
+        ["{python}", "manuscript/paper1/scripts/make_figure3_reliability_enriched.py"],
+        ["{python}", "manuscript/paper1/scripts/make_figure4_cognitive_complementarity_enriched.py", "--age-stratified"],
+        ["{python}", "manuscript/paper1/scripts/make_figure5_cross_cohort_cognitive_decoding.py"],
+        ["{python}", "manuscript/paper1/scripts/make_figure6_external_biology_enriched.py"]
+      ],
+      "sources": [
+        "manuscript/paper1/scripts/make_figure2_2x2_alternative.py",
+        "manuscript/paper1/scripts/make_figure3_reliability_enriched.py",
+        "manuscript/paper1/scripts/make_figure4_cognitive_complementarity_enriched.py",
+        "manuscript/paper1/scripts/make_figure5_cross_cohort_cognitive_decoding.py",
+        "manuscript/paper1/scripts/make_figure6_external_biology_enriched.py"
+      ],
+      "outputs": [
+        "manuscript/paper1/latex/figures/figure2_2x2_alternative.pdf",
+        "manuscript/paper1/latex/figures/figure3_reliability_enriched.pdf",
+        "manuscript/paper1/latex/figures/figure4_cognitive_complementarity_age_stratified_annotated_v4.pdf",
+        "manuscript/paper1/latex/figures/figure5_cross_cohort_cognitive_decoding.pdf",
+        "manuscript/paper1/latex/figures/figure6_external_biology_enriched.pdf"
+      ]
+    }
+  }
+}
