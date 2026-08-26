@@ -1,9 +1,5 @@
 # Paper 1 code release
 
-This directory is the reproducibility interface for the first manuscript. It
-organizes the analyses that support the paper without moving historical scripts,
-deleting exploratory work, overwriting frozen results, or regenerating Figure 1.
-
 ## Scope
 
 The release covers the paper's central evidence chain:
